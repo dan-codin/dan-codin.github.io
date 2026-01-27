@@ -4,21 +4,21 @@
         <title> Pizza Order Form</title>
     </head>
     <body>
-        <form name="pizzaForm" id="pizza" action="" method="post">
+        <form name="pizzaForm" id="pizza" action="/order" method="post">
             <h1>Pizza Ordering Form</h1>
             <h2>Contact Information</h2>
-            <section>
+            <div>
                 <label for="name">Name:</label> 
                 <input id="name" name="name" type="text" required>
-            </section>
-            <section>
+            </div>
+            <div>
                 <label for="phone">Phone:</label>
-                <input id="phone" type="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" title="555-555-5555" required>
-            </section>
-            <section>
+                <input id="phone" type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" title="555-555-5555" required>
+            </div>
+            <div>
                 <label for="email">Email:</label>
                 <input id="email" type="email" name="email" required>
-            </section>
+            </div>
             <h2>Select Pizza Size</h2>
             <label for="pizzaSize">Pizza Size:</label>
             <select id="pizzaSize" name="pizzaSize" required>
@@ -28,45 +28,46 @@
                 <option>XLarge</option>
             </select>
             <h2>Select Sauce</h2>
-            <section>
+            <div>
                 <input type="radio" id="marinara" name="sauce" value="Marinara" required>
                 <label for="marinara">Marina</label>
-            </section>
-            <section>
+            </div>
+            <div>
                 <input type="radio" id="ranch" name="sauce" value="Ranch" required>
                 <label for="ranch">Ranch</label>
-            </section>
-            <section>
+            </div>
+            <div>
                 <input type="radio" id="noSauce" name="sauce" value="No Sauce" required>
                 <label for="noSauce">No Sauce</label>
-            </section>
+            </div>
             <h2>Select Toppings</h2>
-            <section>
+            <div>
                 <input type="checkbox" id="pepperoni" name="pepperoni">
                 <label for="pepperoni">Pepperoni</label>
                 <input type="checkbox" id="sausage" name="sausage">
                 <label for="sausage">Sausage</label>
-            </section>
-            <section>
+            </div>
+            <div>
                 <input type="checkbox" id="mushroom" name="pmushroom">
                 <label for="mushroom">Mushroom</label>
                 <input type="checkbox" id="pineapple" name="pineapple">
                 <label for="pineapple">Pineapple</label>
-            </section>
-            <section>
+            </div>
+            <div>
                 <input type="checkbox" id="peppers" name="peppers">
                 <label for="peppers">Peppers</label>
                 <input type="checkbox" id="onions" name="onions">
                 <label for="onions">Onions</label>
-            </section>
+            </div>
             <h2>Additional Instructions</h2>
             <textarea id="instructions" name="instructions">Add instructions</textarea><br>
             <button id="submit" type="submit" name="button">Submit</button>
+            <br>
+            <br>
+            <br>
+            <br>
         </form>
-        <br>
-        <br>
-        <br>
-        <footer>
+        <div>
         <table id="favGames" border="1">
             <caption>List of My Favorite Games</caption>
             <thead>
@@ -100,6 +101,5 @@
                 </tr>
             </tbody>
         </table>
-        </footer>
     </body>
 </html>
