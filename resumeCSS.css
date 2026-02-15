@@ -59,6 +59,7 @@ body{
 }
 button{
     background-color: white;
+    color:black;
     width: auto;
     border: none;
     padding:none;
@@ -108,7 +109,7 @@ article{
      #skillsHeading:hover~ #skills,  #skillsHeading:focus~ #skills{
        display: block;
     }
-    #skills ul:has(img){
+    #apps {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
