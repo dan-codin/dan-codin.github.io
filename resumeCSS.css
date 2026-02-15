@@ -1,0 +1,119 @@
+
+div img, img:not(ul + img){
+    display: inline;
+    margin-right:5px;
+    width: 35px;
+    height: 35px;
+    object-fit:fill;
+    
+}
+
+div:has(img), h5:has(img), ul:has(img){
+    display: flex;
+    flex-direction: row;
+    margin-top: auto;
+}
+a, h5, img + h4, img + li, img + p, div#email p{
+    display: inline-block;
+    margin-top: auto;
+}
+a{
+    text-decoration: none;
+    color: rgb(3, 3, 127);
+    font-size: large;
+}
+
+.logo:not(:has(img)){
+    display: inline-block;
+}
+
+#apps{
+    display: block;
+}
+ul.apps li {
+    display: inline-block;
+    text-decoration:none;
+    border-right: 1px solid black;
+    padding-right: 10px;
+    margin-left: 10px;
+}
+ul.apps li:last-child{
+    border: none;
+}
+ol div{
+    display: block;
+}
+#header{
+    display: flex;
+    flex-direction: column;
+    position: sticky;
+    top: 0;
+    opacity: 1;
+    background-color: white;
+}
+body{
+    margin-left: 20%;
+    text-align: justify;
+    margin-right: 20%;
+    font-family: 'arial';
+}
+button{
+    background-color: white;
+    width: auto;
+    border: none;
+    padding:none;
+    font-size: x-large;
+    display: block;
+    margin-bottom: 30px;
+    padding-left:0px;
+}
+article{
+    display: block;
+}
+
+@media screen and (max-width: 600px){
+    article{
+        display: none;
+    }
+    button{
+        width:100%;
+        background-color:rgb(35, 160, 248);
+        font-size: x-large;
+        color: white;
+        border-bottom: 3px solid blue;
+        margin: 0px;
+        text-align: left;
+        display: inline-block;
+
+        
+    }
+    button::after{
+        content: url(expandmore.png);
+        object-fit: cover;
+        float: right;
+        margin: auto;
+    }
+    #experienceHeading:hover~ #experience,  #experienceHeading:focus~ #experience{
+        display: block;
+    }
+     #educationHeading:hover~ #education,  #educationHeading:focus~ #education{
+        display: block;
+    }
+     #projectsHeading:hover~ #projects,  #projectsHeading:focus~ #projects{
+        display: block;
+    }
+     #certsHeading:hover~ #certs,  #certsHeading:focus~ #certs{
+        display: block;
+    }
+     #skillsHeading:hover~ #skills,  #skillsHeading:focus~ #skills{
+       display: block;
+    }
+    #skills ul:has(img){
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-left: 0;
+        text-indent: 0;
+        padding-left: 0;
+    }
+}
