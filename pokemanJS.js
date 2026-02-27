@@ -1,4 +1,5 @@
 async function getPokemon(){
+    document.getElementById("pokemonName").innerHTML="";
     let options =document.querySelectorAll('option');
     Array.from(options).forEach(tag=>{if(tag.innerHTML!=""){tag.remove()}})
     let pokemon = document.getElementById("name").value;
@@ -15,6 +16,8 @@ async function getPokemon(){
         }
         
         let picture = document.getElementById("pokemonImage");
+        let pokemonName = document.getElementById("pokemonName")
+        pokemonName.innerHTML = pokemonObject.name;
         picture.setAttribute("src",pokemonObject.sprites.front_default);
         let selectArr = document.querySelectorAll('select');
         let moveArray = pokemonObject.moves;

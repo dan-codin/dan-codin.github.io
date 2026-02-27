@@ -74,12 +74,15 @@ ul{
     margin: auto;
     justify-content: left;
 }
+#pokemonName{
+    font-size: xx-large;
+}
 @media screen and (max-width: 600px){
  #main{
-    width: 80s%;
+    width: 80%;
  }
  ul{
     font-size: x-small;
  }
-};
+}
     
