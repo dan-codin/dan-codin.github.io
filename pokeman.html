@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Pokemon API</title>
+        <link rel="stylesheet" href="pokemanCSS.css">
+        <script src="pokemanJS.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    </head>
+    <body>
+        <nav id="topNav"><img src="logo.png" alt="pokemon logo"></nav>
+        <div id="main">
+            <label for="name">Name or ID</label>
+            <input type="text" id="name" />
+            <button id="find" onclick="getPokemon()">Find</button>
+            <div id="imageContainer">
+                <img id="pokemonImage">
+            </div>
+            <audio id="sound" controls></audio>
+            <div id="skills">
+                <div class="skills">
+                    <select id="skillsInput1" type="text">
+                        <option></option>
+                    </select>
+                    <select id="skillsInput2" type="text">
+                        <option></option>
+                    </select>
+                </div>
+                 <div class="skills">
+                    <select id="skillsInput3" type="text">
+                        <option></option>
+                    </select>
+                    <select id="skillsInput4" type="text">
+                        <option></option>
+                    </select>
+                </div>
+            </div>
+            <button id="add" onclick="addToTeam()">Add to Team</button>
+        </div>
+    </body>
+</html>
