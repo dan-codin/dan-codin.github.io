@@ -75,8 +75,11 @@ ul{
     justify-content: left;
 }
 @media screen and (max-width: 600px){
- audio {
-    width: 80vw;
+ #main{
+    width: 95%;
+ }
+ ul{
+    font-size: x-small;
  }
 };
     
