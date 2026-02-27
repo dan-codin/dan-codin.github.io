@@ -1,4 +1,6 @@
 async function getPokemon(){
+    let options =document.querySelectorAll('option');
+    Array.from(options).forEach(tag=>{if(tag.innerHTML!=""){tag.remove()}})
     let pokemon = document.getElementById("name").value;
     let address = "https://pokeapi.co/api/v2/pokemon/"+pokemon;
     let pokemonObject;
